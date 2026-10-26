@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+struct Student {
+    int id;
+    char name[20];
+    float marks;
+};
+ 
+int main() {
+    struct Student s1;
+    print("Enter id: ");
+    scan("%d", &s1.id);
+    print("Enter name: ");
+    scan("%s", s1.name);
+    print("Enter marks: ");
+    scan("%f", &s1.marks);
+    print("ID: %d\n", s1.id);
+    print("Name: %s\n", s1.name);
+    print("Marks: %.1f\n", s1.marks);
+    return 0;
+}
